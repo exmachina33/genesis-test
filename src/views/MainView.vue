@@ -76,7 +76,7 @@ watch(activeTab, () => {
 async function create() {
   loading.value = true;
   const type = value.value.value;
-  const url = `https://d6757be6f1100.amocrm.ru/api/v4/${type}`;
+  const url = `amocrm/api/v4/${type}`;
   const res = await createEntity(url, [{name: type}]);
   const createdDataList: Entity[] = res._embedded[type];
   const createdList: Entity[] = [];
