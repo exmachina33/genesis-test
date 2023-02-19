@@ -14,7 +14,7 @@ axiosInstance.interceptors.response.use(
     }
 );
 async function auth() {
-    const { data } = await axiosInstance.get('/api-auth/oauth/get-token.php', {
+    const { data } = await axiosInstance.get('https://test.gnzs.ru/oauth/get-token.php', {
         headers: {
             'Content-Type': 'application/json',
             'X-Client-Id': '30878566',
